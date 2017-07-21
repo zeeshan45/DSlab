@@ -12,11 +12,7 @@ int isFull(){
 
 int isEmpty(){
 	//returns 1 if stack is empty else returns -1
-	if(top==-1)
-	return 1;
-	else
-	return 1;
-}
+	return top==-1;
 
 int peek(){
 	//return element at the top of stack
@@ -60,7 +56,8 @@ int main(){
 		take input in choice variable
 		switch(choice){
 		case 1:
-		     //call peek function
+		     e=peek();//call peek function
+		     printf("\nelement at the top of stack is :%d",e);
 		     break;
 		case 2:
 		     //call push function
